@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>ChatApp</title>
   <link rel="stylesheet" href="css/style.css">
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,26 +16,92 @@
 
 <body>
 
-  Samuel Green
-  Available to Walk
+  <section class="telephone">
+    <div class="telephone__content">
 
-  That sounds great. I’d be happy with that.
+      <article class="telephone__top">
 
-  Could you send over some pictures of your dog, please?
+        <div class="telephone__user">
 
-  Here are a few pictures. She’s a happy girl!
+          <img src="./images/arrow.svg" class="telephone__back">
 
-  Can you make it?
+          <img src="./images/avatar.jpg" class="telephone__avatar">
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+          <div class="telephone__info">
+            <h3 class="telephone__name"> Samuel Green</h3>
+            <p class="telephone__status">Available to Walk</p>
+          </div>
 
-  30 minute walk
-  $29
+          <img src="./images/dots.svg" class="telephone__dots">
 
-  1 hour walk
-  $49
+        </div>
 
-  Type a message…
+      </article>
+      
+      <article class="telephone__main">
+
+        <p class="telephone__chat">That sounds great. I’d be happy with that.</p>
+
+        <p class="telephone__chat"> Could you send over some pictures of your dog, please?</p>
+        
+        <div class="telephone__dogs">
+
+          <img src="images/dog-image-1.jpg" class="telephone__love">
+          <img src="images/dog-image-2.jpg" class="telephone__love">
+          <img src="images/dog-image-3.jpg" class="telephone__love">
+
+        </div>
+       
+        <p class="telephone__chat telephone__chat--right">  Here are a few pictures. She’s a happy girl!</p>
+
+        <p class="telephone__chat telephone__chat--right"> Can you make it?</p>
+
+        <p class="telephone__chat">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+
+        <form class="telephone__form">
+
+          <div class="telephone__plan"> 
+
+            <input type="radio" name="radio" id="radio" class="telephone__radio">
+            <label for="radio" class="telephone__label">30 minute walk</label>
+
+            <p class="telephone__price">$29</p>
+
+          </div>
+
+          <div class="telephone__plan"> 
+
+            <input type="radio" name="radio" id="radio2" class="telephone__radio">
+
+            <label for="radio2" class="telephone__label">1 hour walk</label>
+
+            <p class="telephone__price">$49</p>
+
+          </div>
+
+
+          <div class="telephone__type">
+            <input type="text" placeholder="Type a message…" class="telephone__input">
+
+            <img src="./images/arrow.svg" class="telephone__send">
+          </div>
+
+        </form>
+
+      </article>
+
+    </div>
+  </section>
+
+  
+
+  
+  
+
+  
+  
+
+  
 
   Simple booking
 

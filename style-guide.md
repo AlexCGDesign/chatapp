@@ -20,7 +20,7 @@ The designs were created to the following widths:
 - Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
 - Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
 
-#### Gradients
+#### Gradients 
 
 These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
 

@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --Pale-Violet: hsl(276, 100%, 81%);
     --Moderate-Violet: hsl(276, 55%, 52%);
@@ -13,4 +18,182 @@
 
     --gradient1: hsl(293, 100%, 63%);
     --gradient2: hsl(264, 100%, 61%);
+}
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: tomato;
+}
+
+.telephone{
+    margin: 30px auto;
+    background-color: var(--White);
+    width: 320px;
+    border-radius: 1.5em;
+    padding: .6em;
+    
+}
+
+.telephone__content{
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: 1.5em;
+    background-color: var(--Light-Grayish-Violet);
+
+
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: 
+    "info"
+    "content";
+}
+
+.telephone__top{
+    position: relative;
+    grid-area: info;
+    background-image:
+     linear-gradient(to left, var(--gradient1), var(--gradient2));
+}
+
+.telephone__top::before{
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.telephone__user{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: var(--White);
+}
+
+.telephone__avatar{
+    width: 35px;
+    border: 1px solid ;
+    border-radius: 50%;
+}
+
+.telephone__info{
+    margin-left: 8px;
+}
+
+.telephone__name{
+    font-size: 1rem;
+}
+
+.telephone__status{
+    font-size: .8rem;
+    color: var(--Pale-Violet);
+}
+
+.telephone__dots{
+    margin-left: auto;
+}
+
+.telephone__main{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2em 0;
+    
+    display: grid;
+    gap: 1em;
+    grid-auto-rows: max-content;
+}
+
+.telephone__chat{
+    width: 75%;
+    background-color:  hsla(276, 100%, 81%, 0.552);
+    color: var(--Desaturated-Dark-Violet);
+    padding: 1em;
+    border-radius: 1em 1em 1em .5em;
+    font-size: .8rem;
+}
+
+.telephone__dogs{
+    justify-self: end;
+    display: grid;
+    gap: .7em;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+}
+
+.telephone__love{
+    width: 70px;
+    border-radius: 1em;
+}
+
+.telephone__chat--right{
+    justify-self: end;
+    background-color: var(--White);
+}
+
+.telephone__form{
+    display: grid;
+    gap: 1em;
+}
+
+.telephone__plan{
+    width: 85%;
+
+    background-image:
+     linear-gradient(to left, var(--gradient1), var(--gradient2));
+     color: #fff;
+     border-radius: 1em 1em 1em .5em;
+     padding: 1em;
+
+     display: flex;
+     align-items: center;
+     gap: .4em;
+}
+
+.telephone__radio{
+  
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.telephone__radio:checked{
+    box-shadow: 0 0 0 4px #fff inset;
+}
+
+.telephone__price{
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.telephone__type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em;
+    border-radius: 3em;
+    background-color: #fff;
+    padding: 1em 1em 1em 1.5em;
+}
+
+.telephone__input{
+    font-size: .8rem;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.telephone__send{
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    border-radius: 50%;
+    padding: .2em;
+    transform: rotate(180deg);
 }
